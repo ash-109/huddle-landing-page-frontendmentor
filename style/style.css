@@ -1,10 +1,66 @@
-:root{
-/* Colors */
---Violet: hsl(257, 40%, 49%);
---Soft-Magenta: hsl(300, 69%, 71%);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Fonts */
---heading-font:'Poppins';
---body-font:'Open Sans';
 
+:root {
+  /* Colors */
+  --Violet: hsl(257, 40%, 49%);
+  --Soft-Magenta: hsl(300, 69%, 71%);
+
+  /* Fonts */
+  --heading-font: "Poppins";
+  --body-font: "Open Sans";
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    background: var(--Violet)  url(/images/background/bg-desktop.svg) no-repeat;
+    font-family: var(--body-font);
+    width: 100%;
+    min-height: 100vh;
+  }
+header{
+margin: 3em;
+margin-left: 5rem;
+}
+.container{
+  margin: auto 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 4%;
+    width: 80%;
+}
+.text{
+  flex: 1;
+
+}
+.container img{
+  max-width: 65%;
+  object-fit: cover;
+}
+
+.text h1{
+    font-family: var(--heading-font);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: white;
+
+}
+.text p{
+  color: white;
+  margin-bottom: 2rem;
+}
+.text a{
+  text-decoration: none;
+  color: var(--Violet);
+  background: white;
+  padding: 12px 55px;
+  border-radius: 30px;
+  font-weight: 400;
 }
