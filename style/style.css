@@ -76,7 +76,9 @@ footer{
   gap: 0.7rem;
 }
 @media screen and (max-width:900px){
- 
+ header img{
+  margin-left: -20px;
+ }
   .container{
     flex-direction: column;
     align-items: center;
@@ -90,6 +92,10 @@ max-width: 100%;
   .text{
     text-align: center;
   }
+  .text a {
+    width: 50%;
+    margin: 0 auto;
+  }
 footer{
   justify-content: center;
 }
@@ -102,13 +108,12 @@ background:var(--Violet) url(../images/background/bg-mobile.svg) no-repeat;
 }
   header img {
     width: 70%;
-    margin-left: -20px;
   }
   .text h1{
     font-size: 1.5rem;
   }
   .text a{
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
   }
 
