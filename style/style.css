@@ -61,6 +61,7 @@ header{
   line-height: 1.5rem;
 }
 .text a{
+  display: block;
   text-decoration: none;
   color: var(--Violet);
   background: white;
@@ -75,6 +76,7 @@ footer{
   gap: 0.7rem;
 }
 @media screen and (max-width:900px){
+ 
   .container{
     flex-direction: column;
     align-items: center;
@@ -92,12 +94,22 @@ footer{
   justify-content: center;
 }
 }
-@media screen and (max-width:400px){
+
+@media screen and (max-width:600px){
   body{
-padding: 2rem;
+padding: 2.2rem;
+background:var(--Violet) url(../images/background/bg-mobile.svg) no-repeat;
+}
+  header img {
+    width: 70%;
+    margin-left: -20px;
   }
   .text h1{
     font-size: 1.5rem;
+  }
+  .text a{
+    width: 65%;
+    margin: 0 auto;
   }
 
 }
