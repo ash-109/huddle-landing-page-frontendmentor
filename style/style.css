@@ -69,11 +69,16 @@ header{
   border-radius: 30px;
   font-weight: 400;
 }
+
 footer{
   display: flex;
   justify-content: flex-end;
   align-items: center;
   gap: 0.7rem;
+}
+footer img:hover{
+  transform: scale(1.05)
+   translatey(-2px); 
 }
 @media screen and (max-width:900px){
  header img{
@@ -96,6 +101,7 @@ max-width: 100%;
     width: 50%;
     margin: 0 auto;
   }
+  
 footer{
   justify-content: center;
 }
