@@ -84,8 +84,7 @@ footer{
 footer img:hover{
   transform: scale(1.05)
    translatey(-2px);
-   filter: hue-rotate(100deg) saturate(22%) brightness(61%); 
-   /* rgb(248 83 189) */
+   filter: invert(57%) sepia(35%) saturate(5795%) hue-rotate(293deg) brightness(101%) contrast(101%); 
 }
 
 
