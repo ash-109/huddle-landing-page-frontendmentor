@@ -36,7 +36,7 @@ header img{
       display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 5rem;
+    gap: 3.5rem;
     max-width: 100%;
     margin-bottom: 1.5rem;
 }
@@ -71,7 +71,10 @@ header img{
   border-radius: 30px;
   font-weight: 400;
 }
-
+.text a:hover{
+  background: var(--Soft-Magenta);
+  color: white;
+}
 footer{
   display: flex;
   justify-content: flex-end;
@@ -80,8 +83,12 @@ footer{
 }
 footer img:hover{
   transform: scale(1.05)
-   translatey(-2px); 
+   translatey(-2px);
+   filter: hue-rotate(100deg) saturate(22%) brightness(61%); 
+   /* rgb(248 83 189) */
 }
+
+
 @media screen and (max-width:900px){
 
   .container{
